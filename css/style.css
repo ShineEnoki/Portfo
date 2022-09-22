@@ -47,12 +47,13 @@ main{
 }
 
 .image {
-    padding:10px auto;
-    text-align: center; 
+    text-align: center;
+    margin-left:20px
+    
 }
 
 div>img{
-    width:320px;
+    width:310px;
     height: 320px;
     border-radius: 35%;   
     box-sizing: border-box;
@@ -94,7 +95,7 @@ p{
 }
 @media (max-width:1200px) {
     .image{
-        margin-top:200px;
+        margin-top:180px;
 
     }
     .text{
