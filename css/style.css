@@ -12,7 +12,7 @@ body{
 
 
 
-.nav{
+nav{
     background-color: rgba(0,0,0,0.3);
     text-align: center;
     display: flex;
@@ -20,7 +20,7 @@ body{
     position: fixed;
     top: 0;
     width:100%;
-    backdrop-filter: blur(1px);
+    backdrop-filter: blur(8px);
 }
 
 nav ul{
@@ -30,7 +30,6 @@ nav ul{
 .nav-item{
     display:inline-block;
     margin-left: 20px;
-    color:aqua
 }
 
 .nav-link{
@@ -43,12 +42,13 @@ nav ul{
     color: rgb(247, 0, 0);
 }
 
+main{
+    display:flex;
+}
+
 .image {
-    position:absolute;
-    top:150px;
-    right:10px;
-    margin:10px;
-    
+    padding:10px auto;
+    text-align: center; 
 }
 
 div>img{
@@ -58,16 +58,14 @@ div>img{
     box-sizing: border-box;
     box-shadow: 5px 10px 5px rgb(235, 13, 5) ;
     margin:10px auto;
-    opacity: 0.85;
     padding:0px auto;
 }
 .text{
+    flex-grow: 2;
     box-sizing: border-box;
-    position:absolute;
-    left:0;
     color:rgb(0, 0, 0);
     text-align: center;
-    margin-top: 200px;
+    margin-top: 20px;
     margin-left: 10px;
     line-height: 1em;
     
@@ -82,7 +80,7 @@ p{
     line-height: 2em;
 }
 
-p>span{
+p{
     font-weight: bold;
     font-size: x-large;
     font-family: "Sofia", sans-serif;
@@ -94,25 +92,33 @@ p>span{
     font-weight: bold;
     margin-top: 20px;
 }
-
-@media (max-width:768px) {
+@media (max-width:1200px) {
     .image{
-        top:100px;
-        left: 15%;
+        margin-top:200px;
+
     }
     .text{
-        top:300px;
+        margin-top:250px;
+    }
+
+}
+
+@media (max-width:768px) {
+    main{
+        display:block;
+    }
+    .image{
+        margin:100px 20px 20px;
     }
     
+    .text{
+        margin-top: 20px;
+    }
 }
 
 @media (max-width:576px) {
-    .nav-link{
+    ul li a span{
         display: none;
-    }
-    .image{
-        left: 0;
-        margin-left: 45px;
     }
     div>img{
         width:280px;
