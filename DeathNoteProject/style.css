@@ -13,10 +13,17 @@
     align-items: center;
   }
   
-  nav {
-    display:flex;
-    background-color: rgba(121, 153, 153, 0.815);
-  }
+  nav{
+    background-color: rgba(0,0,0,0.3);
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width:100%;
+    backdrop-filter: blur(8px);
+}
+
 
   nav > ul {
     display: flex;
@@ -24,6 +31,18 @@
 
   nav > ul > li {
     list-style: none;
+    margin: 10px 10px 0px;  
+  }
+
+  nav > ul > li > a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+
+  }
+
+  nav > ul > li > a:hover {
+    color: aqua;
   }
 
   #battle{
@@ -33,7 +52,7 @@
     background-color: #00ffcc;
     display: flex;
     justify-content: center;
-
+    margin-top: 45px;
   }
 
   #playerOne {
@@ -144,6 +163,7 @@
     border-radius: 6px;
     background: #21253c;
     z-index: 9;
+    display: inline-block;
   }
 
   form > span {
@@ -164,7 +184,7 @@
     height: 35px;
     border-radius: 6px;
     margin: auto;
-    margin-top: 32px;
+    margin-top: 25px;
     color: #c1c5c9;
     font-size: 1em;
     font-weight: 500;
@@ -183,5 +203,13 @@
   #reply{
     color:aliceblue;
     text-align: center; 
+  }
+
+  #event {
+    display: inline-block;
+    color: rgb(75, 13, 221);
+    position: absolute;
+    left: 400px;
+    top: 75vh;
   }
   
