@@ -49,7 +49,7 @@
     margin: 1% 5%;
     width: 90%;
     height: 350px;
-    background-color: #00ffcc;
+
     display: flex;
     justify-content: center;
     margin-top: 45px;
@@ -114,102 +114,26 @@
     font-size: 35px;
     font-family: 'Noto Sans Mono', monospace;
   }
-
-  #container {
-    overflow: hidden;
-    position: relative;
-    width: 300px;
-    height: 170px;
-    border-radius: 6px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #21253c;
-    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
-    margin-left: 5%;
+   
+  form {
+    display:block;
+    color: #ec0b0bfa;
   }
   
-  #container:before {
-    content: '';
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    animation: rotation 4s linear infinite;
-    background-image: conic-gradient(transparent, transparent, transparent, #00ffcc);
-  }
-  
-  #container:after {
-    content: '';
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    animation: rotation 4s linear infinite;
-    animation-delay: -2s;
-    background-image: conic-gradient(transparent, transparent, transparent, #5621cf);
-  }
-  
-  @keyframes rotation {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
-  #container > form {
-    width: 98%;
-    height: 98%;
-    border-radius: 6px;
-    background: #21253c;
-    z-index: 9;
-    display: inline-block;
-  }
-
   form > span {
-    color: rgb(19, 230, 245);
-    display:flex;
-
-  }
-  form > span > div {
-    color: rgb(19, 230, 245);
-    margin: 10px;
-    justify-content: center;
-  }
-
-  
-
-  #btn {
-    width: 90%;
-    height: 35px;
-    border-radius: 6px;
-    margin: auto;
-    margin-top: 25px;
-    color: #c1c5c9;
-    font-size: 1em;
-    font-weight: 500;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    background: #5621cf;
-    transition: all .5s;
+    margin: 10px;
   }
   
-  #btn:hover {
-    filter: drop-shadow(2px 2px 5px #5621cf);
+  .btn:hover{
+    background-color: rgba(0, 0, 255, 0.808);
   }
-  
+
   #reply{
-    color:aliceblue;
+    color: #ffffff;
     text-align: center; 
   }
 
-  #event {
-    display: inline-block;
-    color: rgb(75, 13, 221);
-    position: absolute;
-    left: 400px;
-    top: 75vh;
-  }
+
+
   

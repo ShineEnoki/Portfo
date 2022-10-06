@@ -46,7 +46,7 @@ function getRandomInt() {
                 } else {
                   randomNum = generateNumber;
                 }
-                document.querySelector(`#red${randomNum}`).src = "#";
+                document.querySelector(`#red${randomNum}`).src = "photo/10.png";
               }                                                               //ဒီထိ
           } else {
             document.querySelector(`#blue${randomNum}`).src = `photo/${parseInt(heroicon)+1}.png`;
