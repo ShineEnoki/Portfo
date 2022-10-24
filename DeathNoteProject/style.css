@@ -106,19 +106,22 @@
     top: 175px;
   }
 
-  #vs {
+#vs {
     align-items: center;
     justify-content: center;
     margin: 20px;
     padding-top: 130px;
     font-size: 35px;
     font-family: 'Noto Sans Mono', monospace;
-  }
-   
-  form {
+}
+  
+.container{
+    border-radius: 10px;
+}
+form {
     display:block;
     color: #ec0b0bfa;
-  }
+}
   
 form > span {
     display: flex;
