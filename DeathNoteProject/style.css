@@ -120,19 +120,22 @@
     color: #ec0b0bfa;
   }
   
-  form > span {
+form > span {
     display: flex;
     margin: 10px;
-  }
+}
   
-  .btn:hover{
+.btn:hover{
     background-color: rgba(0, 0, 255, 0.808);
-  }
+}
 
-  #reply{
+#kill{
+    display:none;
+}
+#reply{
     color: #ffffff;
     text-align: center; 
-  }
+}
 
 
 
