@@ -28,15 +28,18 @@ nav ul{
 .nav-item{
     display:inline-block;
     margin-left: 20px;
-}
-
-.nav-link{
-    display:inline-block;
     text-decoration: none;
     letter-spacing: 1px;
     margin-top: 15px;
 
 }
+
+/* .nav-link{
+    display:inline-block;
+    text-decoration: none;
+    letter-spacing: 1px;
+    margin-top: 15px;
+} */
 
 .nav-link:hover{
     color: rgb(247, 0, 0);

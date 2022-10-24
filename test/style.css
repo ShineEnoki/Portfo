@@ -1,0 +1,10 @@
+*{
+    padding:0;
+    margin:0;
+    align-items: center;
+}
+
+nav{
+    width: 1080px;
+    background-color: rgb(247, 2, 2);
+}
