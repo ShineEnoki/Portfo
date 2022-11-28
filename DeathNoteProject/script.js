@@ -1,3 +1,15 @@
+function generateRandomNum(){
+    let generateNumber = Math.floor(Math.random() * 10);
+    if (generateNumber % 2 == 0) {
+        randomNum = generateNumber + 1;
+    } else {
+        randomNum = generateNumber;
+    }
+    return randomNum
+}
+
+
+
 function GetNumberAndTurn(randomNum){
     let x = document.querySelector("#playerNumber").textContent;
 
@@ -18,15 +30,10 @@ function getRandomInt() {
 
     // Generating random number
     
-    let generateNumber = Math.floor(Math.random() * 10);
     let randomNum ;
 
-    if (generateNumber % 2 == 0) {
-        randomNum = generateNumber + 1;
-    } else {
-        randomNum = generateNumber;
-    }
     
+    console.log("RandomNUm is ", randomNum)
     
     
 

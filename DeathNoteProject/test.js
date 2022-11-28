@@ -1,11 +1,16 @@
-let randomNum = Math.floor(Math.random() * 10);
+let randomNum ;
 
-console.log(randomNum);
 
-if (randomNum % 2 === 0) {
-    randomNum += 1;
+function generateRandomNum(){
+    let generateNumber = Math.floor(Math.random() * 10);
+    if (generateNumber % 2 == 0) {
+        randomNum = generateNumber + 1;
+    } else {
+        randomNum = generateNumber;
+    }
+    return randomNum;
 }
-
+console.log(generateRandomNum());
 console.log(randomNum)
 
 // for player 1
